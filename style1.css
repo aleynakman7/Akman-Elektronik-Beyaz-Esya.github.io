@@ -1,24 +1,19 @@
 .whatsap{
     font-size: 50px;
-    margin-left: 115px;
+    margin-left: 160px;
     color: #bcbcbc;
 }
 .whatsap:hover{
     color: rgb(5, 184, 5);
     font-size: 50px;
-    place-items: center;
 }
-.insta{
-    font-size: 49px;
-    color: #bcbcbc;
+@media screen and (max-width:790px){
+    .whatsap{
+        margin-left: 50px;
+    }
 }
-.insta:hover{
-    color: rgb(231, 45, 129);
-}
-.linkedin{
-    font-size: 49px;
-    color: #bcbcbc;
-}
-.linkedin:hover{
-    color: rgb(0, 76, 255);
+@media screen and (max-width:400px){
+    .whatsap{
+        margin-left: 150px;
+    }
 }
