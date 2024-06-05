@@ -10,6 +10,12 @@ div #a1 img:nth-child(1){
   height: 150px;
   transition: 0.7s;
 }
+@media screen and (max-width:480px) {  
+  div #a1 img:nth-child(1){
+    width: 90px;
+    height: 90px; 
+  }
+}
 div #a1 img:nth-child(1):hover{
   box-shadow: 
   7px 7px rgba(0, 140, 186, 0.5);
@@ -19,6 +25,15 @@ div #a1 img:nth-child(1):hover{
   font-size: 25px;
   text-align: center;
   padding-right: 145px;
+}
+@media screen and (max-width:480px) {
+  #name{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: -60px; 
+    margin-top: -10px;
+    line-height: 90px;
+  }
 }
 #title{
   font-weight: 500px;
@@ -95,6 +110,11 @@ div a:hover:nth-child(2){
   border: 3px solid #f2f2f2;
   background-color: #f2f2f2;
 }
+@media screen and (max-width:480px){
+  .ibeyaz{
+    margin-left: 175px;
+  }
+}
 .isiyah{
   color: #343a40;
   margin-left: 630px;
@@ -103,6 +123,11 @@ div a:hover:nth-child(2){
   font-size: 40px;
   border: 3px solid transparent; 
   background: transparent;
+}
+@media screen and (max-width:480px){
+  .isiyah{
+    margin-left: 175px;
+  }
 }
 #abouttext{
   font-size: 20px;
