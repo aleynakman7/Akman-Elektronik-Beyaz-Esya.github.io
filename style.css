@@ -16,6 +16,12 @@ div #a1 img:nth-child(1){
     height: 90px; 
   }
 }
+@media screen and (max-width:720px) {  
+  div #a1 img:nth-child(1){
+    width: 130px;
+    height: 130px; 
+  }
+}
 div #a1 img:nth-child(1):hover{
   box-shadow: 
   7px 7px rgba(0, 140, 186, 0.5);
@@ -33,6 +39,15 @@ div #a1 img:nth-child(1):hover{
     margin-right: -60px; 
     margin-top: -10px;
     line-height: 90px;
+  }
+}
+@media screen and (max-width:720px) {
+  #name{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: -60px; 
+    margin-top: -10px;
+    line-height: 130px;
   }
 }
 #title{
