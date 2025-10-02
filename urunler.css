@@ -1,132 +1,162 @@
-*{
-    font-family: "Raleway", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* GENEL STİLLER */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #343a40;
+  --tab-active-color: #ffc107; /* Sarı Vurgu */
+  --transition-speed: 0.5s;
 }
-#shadowtext:hover{
-    text-shadow: 0 0 7px , 0 0 7px; 
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--secondary-color);
 }
-#shadowtext1:hover{
-    text-shadow: 0 0 15px , 0 0 15px;  
+
+.products-section {
+  background-color: #f0f0f0;
 }
-h1{
-    margin-top: 80px;
-    text-align: center;
+
+/* FİLTRELEME ALANI STİLİ */
+.filter-bar {
+  background-color: #fff !important;
+  border: 1px solid #ddd;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
-td{
-    padding: 7px;
+
+/* KATEGORİ SEKMELERİ (TABS) STİLİ */
+.nav-tabs {
+  border-bottom: 2px solid #ddd;
 }
-.card{
-    color: white;
-    margin-top: 10px;
-    width: 310px;
-    height: 400px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid black;
+
+.tab-btn {
+  font-weight: 700;
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 10px 10px 0 0;
+  margin: 0 5px;
+  padding: 10px 20px;
+  background-color: #e9ecef;
+  transition: all 0.3s;
 }
+
+.tab-btn:hover {
+  background-color: #ddd;
+  color: var(--primary-color);
+}
+
+.nav-tabs .nav-link.active {
+  background: linear-gradient(to top, var(--primary-color), #0056b3);
+  color: var(--tab-active-color);
+  border-color: var(--primary-color) var(--primary-color) white;
+  transform: translateY(2px);
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+  padding: 30px 0;
+}
+
+/* ÜRÜN KARTLARI GRİD DÜZENİ */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 15px 0;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all var(--transition-speed) ease-in-out;
+  position: relative;
+  height: 400px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px var(--primary-color);
+}
+
+.card-img-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
 .card-img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* RESMİN KIRPILMADAN, ORANTISINI KORUYARAK TAM SIĞMASI İÇİN 'CONTAIN' KULLANILMALIDIR */
+    object-fit: contain; 
     border-radius: 15px;
+    padding: 15px; /* Resmi kartın kenarından biraz ayırmak için eklendi */
+    background-color: white; /* Resmin etrafındaki boş alanı beyaz yapar */
+    /* Resmin kartın arkasındaki şeffaf gradyan (opacity) efekti olduğu için 
+       kart-img'nin arka planını beyaz yapmak faydalı olacaktır. */
 }
-.card-body{
-    width: 100%;
-    height: 100%;
-    right: -100%;
-    position: absolute;
-    background: #1f3d4738;
-    backdrop-filter: blur(1px);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1.25s;
+/* Görselin üzerine geldiğinde büyüme efekti için (varsa) */
+.card:hover .card-img {
+    transform: scale(1.05); 
 }
-.card:hover .card-body{
-    right: 0;
+
+/* Kart İçeriği */
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
+  color: white;
+  transition: background 0.3s;
 }
-.card-title{
-    text-transform: uppercase;
-    font-weight: 500;
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: var(--tab-active-color);
 }
-.card-sub-title{
-    font-size: 20px;
-    text-transform: capitalize;
-    font-weight: 300;
+
+.card-sub-title {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: 400;
 }
-.card-info{
-    text-transform: capitalize;
-    font-size: 15px;
-    line-height: 25px;
-    margin: 100px 0;
+
+.card-info {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 5px;
+  font-weight: 300;
+  color: #ccc;
 }
-.klimacolor{
-    background: 
-    linear-gradient(to bottom, white, #727272);
-}
-footer{
-    background-color: black;
-    width: 100%;
-    height: 250px;
-    background: 
-    linear-gradient(to bottom, #727272, black);
-}
-#footer{
-    padding: 4rem;
-    background-color: #000;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-#footer a{
-    color: #2690d4;
-}
-footer div{
-    float: left;
-}
-footer div:nth-child(2){
-    float: right;
-}
-#maps{
-    width: 350px;
-    height: 230px;
-    float: right;
-    margin-right: 50px;
-    margin-top: 10px;
-}
-#i-footer{
-    font-size: 20px;
-    color: white;
-}
-#adres{
-    font-size: 20px;
-    color: white;
-}
-#adres:hover{
-    text-decoration: underline;
-}
-#footer-img{
-    width: 200px;
-    height: 200px;
-    transition: 1s;
-}
-#footer-img:hover{
-    background-color: white;
-    width: 200px;
-    height: 200px;
-}
-.footer-table{
-    margin-top: 20px;
-    margin-left: 50px;
-}
-.privacy{
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    background: black;
-    color: white;
+
+/* MOBİL DÜZENLEME */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    height: 350px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  .tab-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
 }
