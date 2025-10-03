@@ -25,7 +25,7 @@
     
     <div class="marquee-bar text-white py-1">
         <div class="container-fluid">
-            <p class="marquee-text mb-0">SERVİS GARANTİLİ & ÜCRETSİZ TESLİM • SERVİS GARANTİLİ & ÜCRETSİZ TESLİM • SERVİS GARANTİLİ & ÜCRETSİZ TESLİM • SERVİS GARANTİLİ & ÜCRETSİZ TESLİM •</p>
+            <p class="marquee-text mb-0">PAZAR GÜNLERİ KAPALIYIZ • SERVİS VE TESLİMATLARIMIZ PAZARTESİ - CUMARTESİ ARASINDA YAPILIR • PAZAR GÜNLERİ KAPALIYIZ • SERVİS VE TESLİMATLARIMIZ PAZARTESİ - CUMARTESİ ARASINDA YAPILIR •</p>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" data-bs-theme="dark">
@@ -241,6 +241,11 @@
             </div>
             </div>
     </section>
+
+    <button onclick="topFunction()" id="back-to-top-btn" title="Sayfa Başına Git">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
     <footer class="text-white pt-4 pb-1">
         <div class="container">
             <div class="row">
@@ -270,5 +275,32 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+    // Sayfa Başına Dön Butonunu tanımlama
+    let mybutton = document.getElementById("back-to-top-btn");
+
+    // Kullanıcı sayfayı aşağı kaydırdığında butonu göster/gizle
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      // 500 piksel aşağı kaydırıldığında butonu göster
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        mybutton.style.display = "block";
+        mybutton.style.opacity = "1";
+      } else {
+        mybutton.style.display = "none";
+        mybutton.style.opacity = "0";
+      }
+    }
+
+    // Butona tıklandığında sayfanın en üstüne kaydır
+    function topFunction() {
+      // Yumuşak kaydırma için 'smooth' kullanıldı
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+</script>
 </body>
 </html>
