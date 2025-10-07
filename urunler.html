@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="urunler.css">
+    
     <title>2. El Ürünlerimiz - Akman Elektronik</title>
 </head>
 <body>
@@ -55,18 +57,18 @@
             <h1 class="text-center mb-5">SERVİS GARANTİLİ 2. EL ÜRÜNLER</h1>
 
             <div class="filter-bar text-center mb-5 p-3 rounded shadow-sm">
-                <p class="lead mb-0 text-secondary">Tüm beyaz eşya, klima ve televizyonlarımız 2 yıl garantilidir.</p>
+                <p class="lead mb-0 text-secondary">Tüm beyaz eşya, klima ve televizyonlarımız 1 yıl garantilidir.</p>
             </div>
             
             <ul class="nav nav-tabs justify-content-center mb-5" id="productTabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active tab-btn" id="beyaz-esya-tab" data-bs-toggle="tab" data-bs-target="#beyaz-esya" type="button" role="tab" aria-controls="beyaz-esya" aria-selected="true">Beyaz Eşya</button>
+                    <button class="nav-link active tab-btn" id="beyaz-esya-tab" data-bs-toggle="tab" data-bs-target="#beyaz-esya" type="button" role="tab" aria-controls="beyaz-esya" aria-selected="true"><i class="fa-solid fa-box"></i> Beyaz Eşya</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link tab-btn" id="tv-tab" data-bs-toggle="tab" data-bs-target="#tv" type="button" role="tab" aria-controls="tv" aria-selected="false">Televizyon</button>
+                    <button class="nav-link tab-btn" id="tv-tab" data-bs-toggle="tab" data-bs-target="#tv" type="button" role="tab" aria-controls="tv" aria-selected="false"><i class="fa-solid fa-tv"></i> Televizyon</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link tab-btn" id="klima-tab" data-bs-toggle="tab" data-bs-target="#klima" type="button" role="tab" aria-controls="klima" aria-selected="false">Klima</button>
+                    <button class="nav-link tab-btn" id="klima-tab" data-bs-toggle="tab" data-bs-target="#klima" type="button" role="tab" aria-controls="klima" aria-selected="false"><i class="fa-solid fa-wind"></i> Klima</button>
                 </li>
             </ul>
 
@@ -173,7 +175,7 @@
 
                         <div class="card">
                             <div class="card-img-container">
-                                <img src="urunler_resim/tv4.png" class="card-img" alt="Profilo TV">
+                                <img src="urunler_resim/tv4.png" class="card-img" alt="Telefunken TV">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Telefunken 50x127 Ekran Ultra Hd 4K Smart LED TV</h5>
@@ -246,35 +248,47 @@
     <i class="fa-solid fa-arrow-up"></i>
 </button>
 
-    <footer class="text-white pt-4 pb-1">
+    <!-- YENİ MODERN FOOTER BAŞLANGIÇ -->
+    <footer class="modern-footer text-white pt-5 pb-1">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex flex-column align-items-center align-items-md-start mb-4 mb-md-0">
-                    <a href="index.html" class="mb-3">
-                        <img src="logotransparan.png" id="footer-img" alt="Logo Transparan">
-                    </a>
-                    <div class="d-flex align-items-center">
-                        <i id="i-footer" class="fa-solid fa-map-location-dot me-2"></i>
-                        <address id="adres" class="mb-0">
-                            İnönü Mah. Maslakçeşme Caddesi No:87 K.çekmece/İstanbul
-                        </address>
-                    </div>
+            <div class="row g-4">
+                <!-- Sol Kolon: İletişim Bilgileri -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading mb-3"><i class="fa-solid fa-address-card me-2"></i> İletişim</h5>
+                    <p><i class="fa-solid fa-location-dot me-2 text-warning"></i> <span id="adres">İnönü Mah. Maslakçeşme Cad. No:87 K.çekmece/İstanbul</span></p>
+                    <p><i class="fa-solid fa-phone me-2 text-warning"></i> Telefon: 0535 843 67 52</p>
+                    <p><i class="fa-solid fa-envelope me-2 text-warning"></i> E-posta: bilgi@akmanelektronik.com</p>
+                    <p><i class="fa-solid fa-warehouse me-2 text-warning"></i> <a href="index.html" class="text-white text-decoration-none">Ana Sayfa</a></p>
                 </div>
 
-                <div class="col-md-6">
+                <!-- Orta Kolon: Çalışma Saatleri -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading mb-3"><i class="fa-solid fa-clock me-2"></i> Çalışma Saatleri</h5>
+                    <ul class="list-unstyled">
+                        <li>Pazartesi - Cumartesi: 09:00 - 19:00</li>
+                        <li class="text-danger">Pazar: Kapalı</li>
+                        <li class="mt-2">Servis ve Teslimatlar: Pzt - Cmt</li>
+                    </ul>
+                </div>
+
+                <!-- Sağ Kolon: Harita -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading mb-3"><i class="fa-solid fa-map-marked-alt me-2"></i> Konum</h5>
                     <iframe id="maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.5784479108136!2d28.797571233135002!3d41.01839035586531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa5c44f995915%3A0x75ad6a409dabf692!2sAKM%20AKMAN%20ELEKTRON%C4%B0K!5e0!3m2!1str!2str!4v1713258086719!5m2!1str!2str" 
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mağaza Konumu"></iframe>
                 </div>
             </div>
         </div>
-
-        <div class="privacy mt-3 py-2">
-            © 2024 Akman Elektronik-Beyaz Eşya, Tüm hakları saklıdır.
+        
+        <div class="privacy mt-4 py-2">
+            © 2025 Akman Elektronik-Beyaz Eşya, Tüm hakları saklıdır.
         </div>
     </footer>
+    <!-- YENİ MODERN FOOTER BİTİŞ -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
     // Sayfa Başına Dön Butonunu tanımlama
     let mybutton = document.getElementById("back-to-top-btn");
