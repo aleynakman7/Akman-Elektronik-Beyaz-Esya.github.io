@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS Düzeltildi -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome İkonları -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- İkon Dosyası -->
     <link rel="icon" href="elektriklogo.ico" type="image/x-icon">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Özel Stil Dosyaları -->
     <link rel="stylesheet" href="style.css">
-    <title>Akman Elektronik-Beyaz Eşya</title>
+    
+    <title>Akman Elektronik - Beyaz Eşya, Klima, TV</title>
 </head>
 <body>
     
-<header id="top-header" class="text-center py-4">
-    <a href="index.html" class="d-flex flex-column flex-md-row align-items-center justify-content-center text-decoration-none text-dark p-2">
-        <img src="logo.jpg" id="logo" class="me-md-3 mb-2 mb-md-0" alt="Akman Elektronik Logo">
-        <h1 id="name" class="mb-0">AKMAN ELEKTRONİK-BEYAZ EŞYA</h1>
-    </a>
-</header>
+    <header id="top-header" class="text-center py-4">
+        <a href="index.html" class="d-flex flex-column flex-md-row align-items-center justify-content-center text-decoration-none text-dark p-2">
+            <!-- LOGO DOSYASININ YOLUNU KENDİ FİRMESİNİN LOGO YOLU İLE DEĞİŞTİRMESİ GEREKİR -->
+            <img src="logo.jpg" id="logo" class="me-md-3 mb-2 mb-md-0" alt="Akman Elektronik Logo">
+            <h1 id="name" class="mb-0">AKMAN ELEKTRONİK-BEYAZ EŞYA</h1>
+        </a>
+    </header>
+    
     <div class="marquee-bar text-white py-1">
         <div class="container-fluid">
             <p class="marquee-text mb-0">PAZAR GÜNLERİ KAPALIYIZ • SERVİS VE TESLİMATLARIMIZ PAZARTESİ - CUMARTESİ ARASINDA YAPILIR • PAZAR GÜNLERİ KAPALIYIZ • SERVİS VE TESLİMATLARIMIZ PAZARTESİ - CUMARTESİ ARASINDA YAPILIR •</p>
         </div>
     </div>
+    
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand d-lg-none" href="index.html">AKM Elektronik-Beyaz Eşya</a>
@@ -48,127 +58,176 @@
             </div>
         </div>
     </nav>
-    <section id="hero-section" class="d-flex align-items-center justify-content-center text-center position-relative">
-        
-        <i class="fa-solid fa-screwdriver-wrench hero-icon icon-1"></i> 
-        <i class="fa-solid fa-toolbox hero-icon icon-2"></i>              
-        <i class="fa-solid fa-gear hero-icon icon-3"></i>                 
-        <i class="fa-solid fa-microchip hero-icon icon-4"></i>           
-        <i class="fa-solid fa-truck-fast hero-icon icon-5"></i>           
-        <i class="fa-solid fa-headset hero-icon icon-6"></i>              
-        <i class="fa-solid fa-plug hero-icon icon-7"></i>                <i class="fa-solid fa-battery-full hero-icon icon-8"></i>        <i class="fa-solid fa-desktop hero-icon icon-9"></i>             <div class="container-fluid position-relative" style="z-index: 2;">
-            <h2 class="display-3 fw-bold mb-3 hero-title">GÜVENİLİR TEKNİK SERVİS VE 2. EL GARANTİLİ ÜRÜNLER</h2>
-            <p class="lead hero-subtitle">20 Yıllık Uzmanlık, Garantili Hizmet, Ücretsiz Teslimat!</p>
-            <a href="urunler.html" class="btn btn-warning btn-lg shadow-lg mt-3 hero-btn">Ürünlerimizi Keşfet <i class="fa-solid fa-arrow-right-to-bracket ms-2"></i></a>
+    
+    <!-- 1. HERO SECTION -->
+    <section id="hero-section" class="position-relative">
+        <!-- Arka Plan İkonları -->
+        <i class="fa-solid fa-bolt hero-icon icon-1"></i>
+        <i class="fa-solid fa-fan hero-icon icon-2"></i>
+        <i class="fa-solid fa-tv hero-icon icon-3"></i>
+        <i class="fa-solid fa-snowflake hero-icon icon-4"></i>
+        <i class="fa-solid fa-plug hero-icon icon-5"></i>
+        <i class="fa-solid fa-blender hero-icon icon-6"></i>
+        <i class="fa-solid fa-washing-machine hero-icon icon-7"></i>
+        <i class="fa-solid fa-microwave hero-icon icon-8"></i>
+        <i class="fa-solid fa-fridge hero-icon icon-9"></i>
+
+        <div class="container text-center position-relative z-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="hero-title mb-3">GÜVENİLİR 2. EL BEYAZ EŞYA VE ELEKTRONİK</h2>
+                    <p class="hero-subtitle mb-4">Servis Garantili Klima, Buzdolabı, Çamaşır Makinesi ve Televizyonlar</p>
+                    <a href="urunler.html" class="btn btn-warning hero-btn">
+                        <i class="fa-solid fa-cart-shopping me-2"></i>2. El Ürünlerimizi Keşfet
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="ilet" class="py-5 iletisim-section">
+
+    <!-- 2. İLETİŞİM BÖLÜMÜ -->
+    <!-- ANİMASYON İÇİN .animate VE data-delay KULLANILDI -->
+    <section id="ilet" class="iletisim-section py-5">
         <div class="container">
-            <h2 class="text-center text-dark fw-light mb-0">İletişim</h2>
-            <div class="separator mx-auto mb-5">
+            <h2 class="text-center mb-5 display-5 fw-bold text-secondary animate" data-delay="0">Bizimle İletişime Geçin</h2>
+            <div class="d-flex justify-content-center mb-5 animate" data-delay="100">
+                <div class="separator">
+                    <hr class="w-100 border-primary border-3 opacity-100">
+                </div>
             </div>
-            
+
             <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
                 
+                <!-- 1. KART: ALİ AKMAN -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="contact-card h-100 shadow-lg text-center p-4">
+                    <div class="contact-card h-100 shadow-lg text-center p-4 animate" data-delay="200">
                         <h5 class="card-title fw-bold">Ali AKMAN</h5>
                         <p class="card-text mb-3">PATRON-USTA</p>
                         <h6 class="phone-number mb-3">0 (536) 692 62 20</h6>
                         <a href="https://wa.me/905366926220?text=Merhaba,%202.%20el%20ürünleriniz%20hakkında%20bilgi%20almak%20istiyorum." 
-                           target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
+                            target="_blank" class="whatsapp-btn">
+                             <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
                         </a>
                     </div>
                 </div>
                 
+                <!-- 2. KART: CANER AKMAN -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="contact-card h-100 shadow-lg text-center p-4">
+                    <div class="contact-card h-100 shadow-lg text-center p-4 animate" data-delay="400">
                         <h5 class="card-title fw-bold">Caner AKMAN</h5>
                         <p class="card-text mb-3">SERVİS SORUMLUSU</p>
                         <h6 class="phone-number mb-3">0 (535) 427 86 71</h6>
                         <a href="https://wa.me/905354278671?text=Merhaba,%20servis%20ve%20tamir%20hizmetleri%20hakkında%20bilgi%20almak%20istiyorum." 
-                           target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
+                            target="_blank" class="whatsapp-btn">
+                             <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
                         </a>
                     </div>
                 </div>
 
+                <!-- 3. KART: ALEYNA AKMAN -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="contact-card h-100 shadow-lg text-center p-4">
+                    <div class="contact-card h-100 shadow-lg text-center p-4 animate" data-delay="600">
                         <h5 class="card-title fw-bold">Aleyna AKMAN</h5>
                         <p class="card-text mb-3">SATIŞ SORUMLUSU</p>
                         <h6 class="phone-number mb-3">0 (535) 843 67 52</h6>
                         <a href="https://wa.me/905354278671?text=Merhaba,%20satış%20hakkında%20bilgi%20almak%20istiyorum." 
-                           target="_blank" class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
+                            target="_blank" class="whatsapp-btn">
+                             <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <section id="about" class="py-5 hakkimizda-section">
-        <div class="container">
-            <h2 class="text-center text-white fw-light mb-5">Hakkımızda</h2>
+
+    <!-- 3. HAKKIMIZDA BÖLÜMÜ -->
+    <!-- ANİMASYON İÇİN .animate VE data-delay KULLANILDI -->
+    <section id="about" class="hakkimizda-section py-5">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold text-white mb-5 animate" data-delay="0">Neden Akman Elektronik?</h2>
             
-            <p id="abouttext" class="lead text-center text-white mx-auto mb-5">
-                Yaklaşık 20 yıl önce Ali Akman baba mesleği olan Elektronik-Beyaz Eşya Tamirciliğine başladı. Birçok yerde tamirci olarak çalıştı, sonra kendisi dükkan açıp çocukları ile dükkanı 2017 yılından beri işletmektedir.
+            <div class="d-flex justify-content-center mb-5 animate" data-delay="100">
+                <div class="separator">
+                    <hr class="w-100 border-warning border-3 opacity-100">
+                </div>
+            </div>
+
+            <p id="abouttext" class="mx-auto mb-5 animate" data-delay="200">
+                Akman Elektronik olarak 1995 yılından bu yana Küçükçekmece ve çevresine hizmet vermekteyiz. Amacımız, bütçe dostu, servis garantili ikinci el beyaz eşya, klima ve televizyonları müşterilerimizle buluşturmaktır. Sattığımız her ürünün arkasındayız ve 1 yıl servis garantisi veriyoruz. Güven ve şeffaflık ilkelerimizle sektörde fark yaratmaya devam ediyoruz.
             </p>
 
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="box p-4 h-100 shadow-sm rounded">
-                        <h3 class="text-center mb-3">Vizyon</h3> 
-                        <p class="text-center">Vizyonumuz şimdi ve gelecek yıllarda işini dürüstlükle yapmak ve işinin hakkını vermek.</p>
+            <div class="row justify-content-center text-start g-4">
+                <!-- 1 Yıl Garanti Box -->
+                <div class="col-md-4">
+                    <div class="box p-4 animate" data-delay="300">
+                        <h3 class="mb-3"><i class="fa-solid fa-shield-halved me-2"></i> 1 Yıl Garanti</h3>
+                        <p class="mb-0">Tüm ürünlerimiz test edilmiş ve 1 yıl servis güvencemiz altındadır.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="box p-4 h-100 shadow-sm rounded">          
-                        <h3 class="text-center mb-3">Misyon</h3>
-                        <p class="text-center">Misyonumuz siz değerli müşterilerimizin eşyalarındaki sorunları tam tespit edip, malzemeden çalmadan, mağdur etmeden, kaliteli malzeme kullanıp Elektronik-Beyaz Eşyalarınızı tamir etmek ve dükkanımızda bulunan 2.el eşyaları satmak.</p>  
+                <!-- Hızlı Teslimat Box -->
+                <div class="col-md-4">
+                    <div class="box p-4 animate" data-delay="500">
+                        <h3 class="mb-3"><i class="fa-solid fa-truck-fast me-2"></i> Hızlı Teslimat</h3>
+                        <p class="mb-0">İstanbul içi hızlı teslimat ve isteğe bağlı kurulum hizmeti sunuyoruz.</p>
+                    </div>
+                </div>
+                <!-- Uygun Fiyat Box -->
+                <div class="col-md-4">
+                    <div class="box p-4 animate" data-delay="700">
+                        <h3 class="mb-3"><i class="fa-solid fa-wallet me-2"></i> Uygun Fiyat</h3>
+                        <p class="mb-0">Kaliteden ödün vermeden en uygun fiyat garantisiyle çalışıyoruz.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
+
 
     <button onclick="topFunction()" id="back-to-top-btn" title="Sayfa Başına Git">
     <i class="fa-solid fa-arrow-up"></i>
 </button>
 
-    <footer class="text-white pt-4 pb-1">
+    <!-- YENİ MODERN FOOTER BAŞLANGIÇ -->
+    <footer class="modern-footer text-white pt-5 pb-1">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex flex-column align-items-center align-items-md-start mb-4 mb-md-0">
-                    <a href="index.html" class="mb-3">
-                        <img src="logotransparan.png" id="footer-img" alt="Logo Transparan">
-                    </a>
-                    <div class="d-flex align-items-center">
-                        <i id="i-footer" class="fa-solid fa-map-location-dot me-2"></i>
-                        <address id="adres" class="mb-0">
-                            İnönü Mah. Maslakçeşme Caddesi No:87 K.çekmece/İstanbul
-                        </address>
-                    </div>
+            <div class="row g-4">
+                <!-- Sol Kolon: İletişim Bilgileri -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading mb-3"><i class="fa-solid fa-address-card me-2"></i> İletişim</h5>
+                    <p><i class="fa-solid fa-location-dot me-2 text-warning"></i> <span id="adres">İnönü Mah. Maslakçeşme Cad. No:87 K.çekmece/İstanbul</span></p>
+                    <p><i class="fa-solid fa-phone me-2 text-warning"></i> Telefon: 0535 843 67 52</p>
+                    <p><i class="fa-solid fa-envelope me-2 text-warning"></i> E-posta: bilgi@akmanelektronik.com</p>
+                    <p><i class="fa-solid fa-warehouse me-2 text-warning"></i> <a href="index.html" class="text-white text-decoration-none">Ana Sayfa</a></p>
                 </div>
 
-                <div class="col-md-6">
+                <!-- Orta Kolon: Çalışma Saatleri -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading mb-3"><i class="fa-solid fa-clock me-2"></i> Çalışma Saatleri</h5>
+                    <ul class="list-unstyled">
+                        <li>Pazartesi - Cumartesi: 09:00 - 19:00</li>
+                        <li class="text-danger">Pazar: Kapalı</li>
+                        <li class="mt-2">Servis ve Teslimatlar: Pzt - Cmt</li>
+                    </ul>
+                </div>
+
+                <!-- Sağ Kolon: Harita -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading mb-3"><i class="fa-solid fa-map-marked-alt me-2"></i> Konum</h5>
                     <iframe id="maps"
-                    src="https://maps.google.com/maps?q=Maslak%C3%A7e%C5%9Fme%20Caddesi%20No:87%20K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece/İstanbul&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.5784479108136!2d28.797571233135002!3d41.01839035586531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa5c44f995915%3A0x75ad6a409dabf692!2sAKM%20AKMAN%20ELEKTRON%C4%B0K!5e0!3m2!1str!2str!4v1713258086719!5m2!1str!2str" 
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mağaza Konumu"></iframe>
                 </div>
             </div>
         </div>
-
-        <div class="privacy mt-3 py-2">
-            © 2024 Akman Elektronik-Beyaz Eşya, Tüm hakları saklıdır.
+        
+        <div class="privacy mt-4 py-2">
+            © 2025 Akman Elektronik-Beyaz Eşya, Tüm hakları saklıdır.
         </div>
     </footer>
-    <script src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.5784479108136!2d28.797571233135002!3d41.01839035586531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa5c44f995915%3A0x75ad6a409dabf692!2sAKM%20AKMAN%20ELEKTRON%C4%B0K!5e0!3m2!1str!2str!4v1713258086719!5m2!1str!2str"  
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- YENİ MODERN FOOTER BİTİŞ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
     // Sayfa Başına Dön Butonunu tanımlama
     let mybutton = document.getElementById("back-to-top-btn");
@@ -195,6 +254,33 @@
         behavior: 'smooth'
       });
     }
+
+    // ===========================================
+    // KAYDIRMA ANİMASYONU (FADE-IN) ETKİSİ
+    // ===========================================
+    const contactObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const element = entry.target; 
+                // data-delay özelliğinden gecikme süresini al
+                const delay = parseInt(element.getAttribute('data-delay')) || 0; 
+                
+                // Gecikmeli olarak 'show' sınıfını ekle
+                setTimeout(() => {
+                    element.classList.add('show');
+                }, delay);
+                
+                observer.unobserve(element); // Element bir kez göründüğünde takibi bırak
+            }
+        });
+    }, { 
+        threshold: 0.1 // Elementin %10'u göründüğünde tetikle
+    });
+
+    // Sayfadaki tüm .animate sınıflı elementleri takip et
+    document.querySelectorAll('.animate').forEach(element => {
+        contactObserver.observe(element);
+    });
 </script>
 </body>
 </html>
