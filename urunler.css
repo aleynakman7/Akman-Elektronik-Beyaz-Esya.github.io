@@ -1,162 +1,176 @@
-/* GENEL STİLLER */
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #343a40;
-  --tab-active-color: #ffc107; /* Sarı Vurgu */
-  --transition-speed: 0.5s;
-}
+/* urunler.css */
 
-h1 {
-  margin-top: 50px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 2.5rem;
-  color: var(--secondary-color);
-}
+/* GEREKLİ DEĞİŞKENLERİ style.css'ten ALIYORUZ */
+
+/* ========================================================= */
+/* 1. ÜRÜNLER ANA BAŞLIK VE GÜVENCE BARI STİLİ */
+/* ========================================================= */
 
 .products-section {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Hafif bir arka plan rengi */
 }
 
-/* FİLTRELEME ALANI STİLİ */
+.products-section h1 {
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+
 .filter-bar {
-  background-color: #fff !important;
-  border: 1px solid #ddd;
-  border-radius: 15px !important;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: #fff !important;
+    border: 1px solid #ddd;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* KATEGORİ SEKMELERİ (TABS) STİLİ */
+/* ========================================================= */
+/* 2. KATEGORİ SEKMELERİ (TABS) STİLİ */
+/* ========================================================= */
+
 .nav-tabs {
-  border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
 }
 
 .tab-btn {
-  font-weight: 700;
-  color: var(--secondary-color);
-  border: none;
-  border-radius: 10px 10px 0 0;
-  margin: 0 5px;
-  padding: 10px 20px;
-  background-color: #e9ecef;
-  transition: all 0.3s;
+    font-weight: 700;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 10px 10px 0 0;
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #e9ecef;
+    transition: all 0.3s;
 }
 
 .tab-btn:hover {
-  background-color: #ddd;
-  color: var(--primary-color);
+    background-color: #ddd;
+    color: var(--primary-color);
 }
 
 .nav-tabs .nav-link.active {
-  background: linear-gradient(to top, var(--primary-color), #0056b3);
-  color: var(--tab-active-color);
-  border-color: var(--primary-color) var(--primary-color) white;
-  transform: translateY(2px);
-  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to top, var(--primary-color), #0056b3);
+    color: var(--tab-active-color); /* Beyaz */
+    border-color: var(--primary-color) var(--primary-color) white;
+    transform: translateY(2px);
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-btn i {
+    margin-right: 8px; /* İkon ile yazı arasına boşluk */
+    font-size: 1.1em;
 }
 
 .tab-content {
-  padding: 30px 0;
+    padding: 30px 0;
 }
 
-/* ÜRÜN KARTLARI GRİD DÜZENİ */
+/* ========================================================= */
+/* 3. ÜRÜN KARTLARI (PRODUCT CARD) STİLİ */
+/* ========================================================= */
+
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 15px 0;
 }
 
 .card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  transition: all var(--transition-speed) ease-in-out;
-  position: relative;
-  height: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all var(--transition-speed) ease-in-out;
+    position: relative;
+    height: 400px; /* Sabit kart yüksekliği */
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px var(--primary-color);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px var(--primary-color);
 }
 
 .card-img-container {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .card-img{
     width: 100%;
     height: 100%;
-    /* RESMİN KIRPILMADAN, ORANTISINI KORUYARAK TAM SIĞMASI İÇİN 'CONTAIN' KULLANILMALIDIR */
-    object-fit: contain; 
+    object-fit: contain; /* Resmi kutuya sığdırır */
     border-radius: 15px;
-    padding: 15px; /* Resmi kartın kenarından biraz ayırmak için eklendi */
-    background-color: white; /* Resmin etrafındaki boş alanı beyaz yapar */
-    /* Resmin kartın arkasındaki şeffaf gradyan (opacity) efekti olduğu için 
-       kart-img'nin arka planını beyaz yapmak faydalı olacaktır. */
+    padding: 15px; 
+    background-color: white; 
+    transition: transform 0.5s;
 }
-/* Görselin üzerine geldiğinde büyüme efekti için (varsa) */
+
 .card:hover .card-img {
     transform: scale(1.05); 
 }
 
-/* Kart İçeriği */
+/* Kart İçeriği - Yarı Saydam Alt Kısım */
 .card-body {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
-  color: white;
-  transition: background 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    /* Alttan koyu bir degrade ile içeriği öne çıkar */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)); 
+    color: white;
+    transition: background 0.3s;
 }
 
 .card-title {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.3rem;
-  margin-bottom: 5px;
-  color: var(--tab-active-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: var(--tab-active-color); /* Beyaz */
 }
 
 .card-sub-title {
-  font-size: 1.1rem;
-  text-transform: capitalize;
-  font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 400;
 }
 
 .card-info {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-top: 5px;
-  font-weight: 300;
-  color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 5px;
+    font-weight: 300;
+    color: #ccc;
 }
 
-/* MOBİL DÜZENLEME */
+/* ========================================================= */
+/* 4. MEDYA SORGULARI (RESPONSIVENESS) */
+/* ========================================================= */
 @media (max-width: 600px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
-  .card {
-    height: 350px;
-  }
+    .card {
+        height: 350px;
+    }
 
-  h1 {
-    font-size: 2rem;
-    margin-top: 30px;
-  }
+    h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
 
-  .tab-btn {
-    padding: 8px 15px;
-    font-size: 0.9rem;
-  }
+    .tab-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        /* Mobil cihazlarda sığması için metni sar */
+        white-space: normal; 
+    }
+    .nav-tabs {
+        flex-wrap: wrap; 
+    }
 }
