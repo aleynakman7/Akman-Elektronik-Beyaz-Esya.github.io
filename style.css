@@ -348,7 +348,7 @@ footer {
 }
 
 /* =========================
-   29 EKİM MODAL STİLLERİ
+   29 EKİM MODAL STİLLERİ (SADE)
 ========================= */
 #cumhuriyetModal .modal-content {
     background-color: transparent; 
@@ -358,21 +358,21 @@ footer {
 /* Modalın arka planını tam karartma yapar */
 .modal-backdrop.fade.show {
     opacity: 0.9 !important; 
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color); /* Koyu Gri Arka Plan */
 }
 
 /* Modalın kendisini (içindeki kutuyu) ortalar ve gölge verir */
 #cumhuriyetModal .modal-dialog {
-    max-width: 400px; 
+    max-width: 400px; /* Görselin boyutuna uygun maksimum genişlik */
     border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); /* Derin gölge */
 }
 
-/* Görseli ve overlay'i tutan alan */
+/* Görseli ve kapatma butonunu tutan alan */
 #cumhuriyetModal .modal-body {
     padding: 0;
     border-radius: 15px;
-    position: relative; /* Overlay metin için referans */
+    position: relative; 
 }
 
 #cumhuriyetModal .modal-body img {
@@ -380,7 +380,7 @@ footer {
     display: block; 
 }
 
-/* Kapatma butonu stili */
+/* Kapatma butonu stili (Modalın sağ üst köşesine beyaz butonu yerleştirir) */
 #cumhuriyetModal .btn-close {
     background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
     opacity: 1;
@@ -391,35 +391,8 @@ footer {
 }
 
 /* =========================
-   OVERLAY METİN STİLİ (SADELEŞTİRİLMİŞ)
+   OVERLAY METİN SİLİNMİŞTİR.
 ========================= */
-.overlay-text {
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    /* Yazının okunabilirliği için hafif yarı saydam bir arka plan */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), transparent); 
-    padding: 15px 15px 60px 15px; /* Başlığın görselin üst kısmına oturmasını sağlar */
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    z-index: 5; 
-    opacity: 0; 
-    transform: translateY(-20px); 
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
-}
-
-.overlay-text.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.overlay-text h5 {
-    color: #ffc107; /* Sarı renkli başlık */
-    font-size: clamp(1.4rem, 2.8vw + 0.5rem, 2.2rem); 
-    line-height: 1.2;
-    margin-bottom: 0 !important; 
-}
 
 
 /* =========================
@@ -466,11 +439,5 @@ footer {
   .hero-btn {
     font-size: 1rem;
     padding: 10px 20px;
-  }
-  .overlay-text {
-    padding: 10px 10px 40px 10px;
-  }
-  .overlay-text h5 {
-    font-size: 1.2rem;
   }
 }
