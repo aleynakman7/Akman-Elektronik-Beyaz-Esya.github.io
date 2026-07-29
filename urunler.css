@@ -1,7 +1,3 @@
-/* urunler.css */
-
-/* GEREKLİ DEĞİŞKENLERİ style.css'ten ALIYORUZ */
-
 /* ========================================================= */
 /* 1. ÜRÜNLER ANA BAŞLIK VE GÜVENCE BARI STİLİ */
 /* ========================================================= */
@@ -10,7 +6,7 @@
     background-color: #f0f0f0; /* Hafif bir arka plan rengi */
 }
 
-.products-section h1 {
+.products-section h2 {
     font-weight: 700;
     color: var(--secondary-color);
     margin-bottom: 3rem;
@@ -97,6 +93,22 @@
     overflow: hidden;
 }
 
+.badge-garanti {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .card-img{
     width: 100%;
     height: 100%;
@@ -159,7 +171,7 @@
         height: 350px;
     }
 
-    h1 {
+    .products-section h2 {
         font-size: 2rem;
         margin-top: 30px;
     }
